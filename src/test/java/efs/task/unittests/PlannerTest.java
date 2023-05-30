@@ -22,7 +22,7 @@ public class PlannerTest {
         final User user = TestConstants.TEST_USER;
 
         // when
-        int result = this.planner.calculateDailyCaloriesDemand(user, activityLevel);
+        int result = planner.calculateDailyCaloriesDemand(user, activityLevel);
 
         // then
         assertEquals(TestConstants.CALORIES_ON_ACTIVITY_LEVEL.get(activityLevel), result);
@@ -34,7 +34,7 @@ public class PlannerTest {
         final User user = TestConstants.TEST_USER;
 
         // when
-        DailyIntake result = this.planner.calculateDailyIntake(user);
+        DailyIntake result = planner.calculateDailyIntake(user);
 
         // then
         final DailyIntake expected = TestConstants.TEST_USER_DAILY_INTAKE;
